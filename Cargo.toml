@@ -1,0 +1,15 @@
+[package]
+name = "midiclock"
+version = "0.1.0"
+edition = "2024"
+crate-type = ["cdylib"]
+
+[dependencies]
+midir = "0.9"
+eframe = "0.32"
+
+[profile.release]
+panic = "abort"
+
+[package.metadata.windows_subsystem]
+windows = "windows"
